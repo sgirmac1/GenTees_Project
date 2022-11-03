@@ -9,8 +9,100 @@
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body>
-   <h1>Home Page</h1> 
+<body style="background-color:rgb(167, 131, 199);">
+    <nav class="navbar-dark bg-dark navbar navbar-expand-lg">
+        <a class="navbar-brand px-3" href="./index.html">
+         <img src="./resources/images/GenTees_Logo.png" alt="GenTees Logo" height="90">
+        </a>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+     
+
+<div class="container my-3"> 
+   <h1 class="text-center text-uppercase font-weight-bold">Thank you for Shopping With us!!</h1> 
+ </div>  
+
+<div class="container p-5 my-2">
+   <h3>Send Us A Message</h3>
+   <div class="row">
+    <div class="col-auto">
+      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+    </div>
+    <div class="row">
+    <div class="col-auto">
+      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+    </div>
+</div>
+  </div> 
+  <div class="row">
+    <div class="col-auto">
+        <input type="text" class="form-control" placeholder="name@gmail.com" aria-label="Email">
+
+    </div>
+      
+  </div>
+  <div class="row">
+    <div class="col-auto">
+        <label for="message" class="form-label"></label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Type your message here..."></textarea>
+        <button class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</div>
+</div>
+  <!--alternative way to write a form --> 
+ <!--  <div class="mb-3">
+    <label for="fullname" class="form-label"></label>
+    <input type="text" class="form-control" id="fullname" placeholder="FullName">
+    <label for="email" class="form-label"></label>
+    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label"></label>
+    <textarea class="form-control" id="message" rows="3" placeholder="Type your message here..."></textarea>
+  </div>-->
+
+  <div> 
+   <div class="container">
+    <h2>Contact Details</h2>
+        <p> Email:</p>
+        <p>GennTees@gmail.com</p>
+        <p>Address</p>
+        <p>2345 Geaorgia Ave Washington, DC 12345</p>
+  </div>
+  <!--Footer-->
+  <div class="bg-dark text-white mt-5 p-4">
+    <div class="row">
+        <div class="col-2"> 
+            <p>&copy; 2022 </p>
+        </div>
+        <div class="col-3"> 
+            <p>Phone: 123-456-7890 </p>
+        </div>
+        <div class="col-4"> 
+            <p>Email: Gentees@gmail.com</p>
+        </div>
+    </div>
+    
+</div>
 
 
    <!-- JavaScript Bundle with Popper -->
