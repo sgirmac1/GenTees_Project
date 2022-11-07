@@ -47,5 +47,5 @@ pro1.addItem("Pink T-shirt", "Children Pink T-shirt","./resources/images/Pink T-
 //getSampleItem(pro1.items);
 
 pro1.loadItemsFromLocalStorage();
-console.log(pro1.items);
-addItemCard(pro1.items);
+console.log(pro1.localStorageItems);
+addItemCard(pro1.localStorageItems);

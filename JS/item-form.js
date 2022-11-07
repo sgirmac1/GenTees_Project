@@ -8,6 +8,6 @@ function getNewProduct(event){
     const time = new Date();
 newProduct.addItem(form[0].value, form[1].value, form[2].value, time);
 newProduct.loadItemsFromLocalStorage();
-console.log(newProduct.items);
+console.log(newProduct.localStorageItems);
 };
 form.addEventListener('submit', getNewProduct);

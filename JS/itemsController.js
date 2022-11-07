@@ -3,6 +3,7 @@ export default class ItemsController{
     constructor(currentId=0){
         this.items = [];
         this.currentId=currentId;
+        this.localStorageItems=[];
    
     }
    
@@ -22,22 +23,22 @@ export default class ItemsController{
         newItem.img=img;
         newItem.createdAt=createdAt;
         this.items.push(newItem);
-        localStorage.setItem("items", JSON.stringify(newItem));
+        localStorage.setItem("items", JSON.stringify(this.items));
     }
      loadItemsFromLocalStorage(){
         const storageItems = localStorage.getItem("items")
         console.log("Storage items: " + storageItems)
         if (storageItems) {
-            const items = JSON.parse(storageItems)
+            const gen = JSON.parse(storageItems)
             
-            console.log(items);
+            console.log(gen);
             //TODO load the items into the local items structure (this.items)  
-           for (let i=0; i<items.length;i++){
-               const item=items[i];
-               console.log(item);
-               this.items.push(item);
+           for (let i=0; i<gen.length;i++){
+               const shirt=gen[i];
+               console.log(shirt);
+               this.localStorageItems.push(shirt);
            }
-           console.log(this.items);
+           console.log(this.localStorageItems);
         }
        
     }
