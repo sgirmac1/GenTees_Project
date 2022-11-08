@@ -5,10 +5,11 @@ import ItemsController from "./itemsController.js"
     
     let innerhtml="";
     for (let i=0; i<item.length; i++){
-        innerhtml+=`<div class="col-4"> <div class="card" style="width: 18rem;">
+        innerhtml+=`<div class="col-4 mt-1 "> <div class="card" style="width: 18rem;">
         <img src="${item[i].img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${item[i].description}</h5>
+      
           <a href="#" class="btn btn-primary">Add</a>
         </div>
       </div></div>`
@@ -39,11 +40,11 @@ import ItemsController from "./itemsController.js"
 
 const pro1 = new ItemsController;
 
-pro1.addItem("White T-shirt", "Classic White T-shirt", "./resources/images/White T-shirt.png", "2022-2-2")
-pro1.addItem("Blue T-shirt", "Women Blue T-shirt","./resources/images/Blue T-shirt.png", "2022-2-2" );
-pro1.addItem("Grey T-shirt", "Women Grey T-shirt","./resources/images/Grey T-shirt.png", "2022-2-2" );
-pro1.addItem("Red T-shirt", "Men Red T-shirt","./resources/images/Red T-shirt.png", "2022-2-2" );
-pro1.addItem("Pink T-shirt", "Children Pink T-shirt","./resources/images/Pink T-shirt.png", "2022-2-2" );
+pro1.addItem("White T-shirt", "Classic White T-shirt $24.50", "./resources/images/White T-shirt.png", "2022-2-2")
+pro1.addItem("Blue T-shirt", "Women Navy Blue T-shirt $22.99","./resources/images/Blue T-shirt.png", "2022-2-2" );
+pro1.addItem("Grey T-shirt", "Women Light Grey T-shirt $22.99","./resources/images/Grey T-shirt.png", "2022-2-2" );
+pro1.addItem("Red T-shirt", "Men Slim-Fit Red T-shirt $24.50","./resources/images/Red T-shirt.png", "2022-2-2" );
+pro1.addItem("Pink T-shirt", "Children Cotton Pink T-shirt $15.99","./resources/images/Pink T-shirt.png", "2022-2-2" );
 //getSampleItem(pro1.items);
 
 pro1.loadItemsFromLocalStorage();
